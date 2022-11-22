@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="40dp"
+        android:text="Email" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView27"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="40dp"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView28"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="40dp"
+        android:text="IBAN" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView29"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="50dp"
+        android:text="Phone number" />
+
+    <EditText
+        android:id="@+id/textView31"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView27"
+        android:layout_alignEnd="@+id/textView27"
+        android:layout_alignRight="@+id/textView27"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="-332dp"
+        android:layout_marginRight="-332dp"
+        android:editable="false"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/textView32"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView28"
+        android:layout_alignEnd="@+id/textView27"
+        android:layout_alignRight="@+id/textView27"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="-328dp"
+        android:layout_marginRight="-328dp"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/textView33"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView29"
+        android:layout_alignEnd="@+id/textView27"
+        android:layout_alignRight="@+id/textView27"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="-326dp"
+        android:layout_marginRight="-326dp"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/textView34"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView30"
+        android:layout_alignEnd="@+id/textView27"
+        android:layout_alignRight="@+id/textView27"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="-326dp"
+        android:layout_marginRight="-326dp"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="402dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginRight="75dp"
+        android:background="@drawable/btn_shape_round"
+        android:text="Cancel" />
+
+    <Button
+        android:id="@+id/updateInfo"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="86dp"
+        android:layout_marginLeft="86dp"
+        android:layout_marginTop="403dp"
+        android:background="@drawable/btn_shape_round"
+        android:text="Update" />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/bgBottomNavigation"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="bottom"
+        app:itemBackground="@color/bgBottomNavigation"
+        app:itemIconTint="@android:color/white"
+        app:itemTextColor=" @android:color/white"
+        app:menu="@menu/bottom_nav_menu" />
+</RelativeLayout>
